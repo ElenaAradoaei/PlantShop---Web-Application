@@ -1,0 +1,196 @@
+body{
+    background-image: url("imagini/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* chestionar */
+
+.chestionar{
+    max-width:650px;
+    padding:16px;
+    background-color: rgb(204, 203, 211, 0.3);	
+    border-color: rgb(175, 154, 130);
+    border-style: solid;
+    margin: auto;
+}
+
+#intrebare{
+    color:rgb(15, 15, 15); 
+}
+
+
+#rezultat{
+    text-align: center;
+    color:rgb(15, 15, 15); 
+}
+
+
+#titlu{
+    text-align: center;
+    color:rgb(4, 70, 4);
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.titlu-pagina{
+    text-align: center;
+    color: rgb(15, 15, 15); 
+    font-size: 30px;
+    background-color:rgb(248, 159, 189);
+    text-shadow: 1px 1px;
+    transform: translate(0px, -20px);
+
+}
+
+.buton{
+    border: 2px solid rgb(175, 154, 130);
+    font-size:  15px;
+    background-color:rgb(247, 224, 231);
+    border-radius: 10px;
+    padding: 7px 13px;;
+}
+
+.buton:hover {    
+    transition: 0.5s;  
+    transform: scale(1.3);  
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(175, 154, 130);
+    color: rgb(0, 0, 0);
+    bottom: 0%;
+}
+footer a{
+    color:rgb(252, 252, 253);
+}
+
+input[type='radio']:checked:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 14px; /* pt forma de cerc */
+    top: -2px;
+    left: -3px;
+    position: relative;
+    background-color: rgb(248, 159, 189);
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+}
+
+input[type='text'], input[type='password']{
+    text-align: center;
+}
+
+#autentificare{
+    text-align: center;
+}
+
+div#acasa{
+    text-align: center;
+}
+
+/* stilizare meniu */
+
+.topnav {
+    background-color: rgb(15, 15, 15);   
+    overflow: hidden;
+    padding-right: 0%;
+    padding-top: 0%;
+}   
+.topnav a {    
+    float: left;   
+    color:white;   
+    text-align: center;    
+    padding: 15px 45px;   
+    text-decoration: none;   
+    font-size: 17px;   
+}    
+.topnav a:hover {    
+    background-color: ghostwhite;    
+    color: black;
+    transition: 0.5s;  
+    transform: scale(1.1);  
+}
+
+.topnav-right {
+    float: right;
+}
+
+.logat{
+    font-size: 20px;
+    color: rgb(15, 15, 15); 
+    font-weight: bold;
+    text-align: right;
+    padding-right: 50px;
+    text-decoration: underline rgb(248, 159, 189) 4px;
+    transform: translate(0px, -30px);
+}
+
+table#tabel-produse{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px black;
+}
+/*
+table#tabel-produse th, td pre {
+    border: 2px solid rgb(179, 18, 18);
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    font-family: cursive;
+}
+*/
+#produs-form{
+    border: 1px black;
+}
+
+#tabel-produse {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+  }
+  
+  #tabel-produse img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #tabel-produse p,
+  #tabel-produse pre {
+    text-align: center;
+  }
+  
+  #tabel-produse tr {
+    text-align: center;
+  }
+
+td pre#adauga{
+    border: none;
+    border-collapse: none;
+    transform: translate(0px, -3px);
+}
+
+#cumparaturi{
+    text-align: center;
+    font-family: cursive;
+    font-size: 18px;
+    color:rgb(160, 12, 12);
+}
+
+#adauga_produs{
+    text-align: center;
+    background-color: rgb(204, 203, 211, 0.3);	
+    border-color: rgb(175, 154, 130);
+    padding: 60px;
+    width: 600px;
+    transform: translate(270px,0px);
+}
+
+tr#produs-adaugat{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}

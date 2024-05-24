@@ -1,0 +1,57 @@
+<h2 class="titlu-pagina">Coș de cumparaturi</h2>
+
+<% if(utilizator){ %>
+    <p class="logat"> Logat ca <span style="color: red;"><%= utilizator %> </span> 🌺</p>
+<% } %>
+
+<div id="cumparaturi">
+        <% if (produse && produse.length > 0) { %> 
+            <table id="tabel-produse">
+                <% for (var i = 0; i < produse.length; i++) { %>
+                    <% switch (i) {
+                        case 0: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/1.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        case 1: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/2.jpg" width="200" height="200"><br/><br/></tr>
+                        <% break;
+                        case 2: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/3.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        case 3: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/4.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        case 4: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/5.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        case 5: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/6.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        case 6: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/7.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        case 7: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/8.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        case 8: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/9.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        case 9: %>
+                            <tr><br/><br/><br/><br/><img src="imagini/10.jpg" width="200" height="200"><br/></tr>
+                        <% break;
+                        default: %>
+                            <p><br/><br/><br/><br/>Nu a fost încărcată o imagine pentru florile introduse.</p>
+                        <% } %>
+                        <tr><pre>NUME:    <%= produse[i].nume %>    </pre> </tr> 
+                        <tr><pre>PRET:    <%= produse[i].pret %>    </pre></tr>
+                <% } %>
+            </table>
+        <% } else { %>
+            <h3>Coșul este gol <br/></h3>  
+        <% } %>
+        
+          
+    <button class="buton" onclick="window.location.href='http://localhost:6777/afisare-bd'">&nbsp;&nbsp;Înapoi la cumpărături&nbsp;&nbsp;</button>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+

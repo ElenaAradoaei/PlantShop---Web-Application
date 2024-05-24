@@ -1,0 +1,26 @@
+<h2 class="titlu-pagina">Chestionar</h2>
+
+<% if(utilizator){ %>
+    <p class="logat"> Logat ca <span style="color: red;"><%= utilizator %> </span> 🌺</p>
+<% } %>
+
+<form action="/rezultat-chestionar" method="post">
+    <fieldset class="chestionar">
+        <% for(var i=0;i<intrebari.length; i++){%>
+            <div>
+              <h4 id="intrebare">&nbsp; &nbsp; &nbsp;<%= intrebari[i].intrebare %></h4>
+                <% for(var j=0;j<intrebari[i].variante.length; j++){%>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                  
+                    <input type="radio" name= <%="q" + i%> value="<%=intrebari[i].variante[j]%>"/>                    
+                    <label><%= intrebari[i].variante[j] %></label><br/>  
+            <% }%> 
+            </div>  
+         <%}%>
+        <br/><br/> &nbsp; &nbsp; &nbsp; 
+        <button class="buton" type="submit" >Trimite răspunsurile</button>
+        <br/><br/> 
+    </fieldset>
+</form>
+
+
+    

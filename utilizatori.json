@@ -1,0 +1,9 @@
+{
+    "utilizatori":[
+    {"utilizator": "test", "parola": "test","nume":"test","prenume":"test", "rol":"USER"},
+    {"utilizator": "Robert", "parola": "abcd" ,"nume":"Micu","prenume":"Robert", "rol":"USER"},
+    {"utilizator": "Alin", "parola": "aaaa" ,"nume":"Grecu","prenume":"Alin", "rol":"USER"},
+    {"utilizator": "Elena", "parola": "bbbb" ,"nume":"Aradoaei","prenume":"Elena", "rol":"ADMIN"},
+    {"utilizator": "Ana", "parola": "Ana" ,"nume":"Popescu","prenume":"Ana", "rol":"ADMIN"}
+]
+}

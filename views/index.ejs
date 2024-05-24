@@ -1,0 +1,83 @@
+<h2 class="titlu-pagina">Acasă</h2>
+
+<% if(utilizator){ %>
+    <p class="logat"> Logat ca <span style="color: red;"><%= utilizator %> </span> 🌺</p>
+<% } %>
+
+<div id="acasa">
+
+    <% if(utilizator){ %>
+        <h2>Bine ai venit, <span style="color: red;"><%= utilizator %> </span>!</h2>
+
+    <% } else { %>
+        <h2> Bine ai venit! <br/> Te rugăm să te autentifici în cont!</h2>
+        <button class="buton" onclick="window.location.href='http://localhost:6777/autentificare'">Autentificare</button>
+    <% } %> 
+
+    <br/><br/>
+    <button class="buton" onclick="window.location.href='http://localhost:6777/creare-bd'">Creare BD </button> &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="buton" onclick="window.location.href='http://localhost:6777/inserare-bd'">Încărcare BD </button> &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="buton" onclick="window.location.href='http://localhost:6777/afisare-bd'">Afișare BD</button>
+
+    <br/><br/><br/>
+
+
+    <div id="cumparaturi">
+        <% if(produse){ %>
+            <table id="tabel-produse">
+
+            <% for (var i = 0; i < produse.length; i++){ %>
+                <% switch (i) {
+                    case 0: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/1.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    case 1: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/2.jpg" width="200" height="200"><br/><br/></tr>
+                    <% break;
+                    case 2: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/3.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    case 3: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/4.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    case 4: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/5.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    case 5: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/6.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    case 6: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/7.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    case 7: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/8.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    case 8: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/9.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    case 9: %>
+                        <tr><br/><br/><br/><br/><img src="imagini/10.jpg" width="200" height="200"><br/></tr>
+                    <% break;
+                    default: %>
+                        <p><br/><br/><br/><br/>Nu a fost încărcată o imagine pentru florile introduse.</p>
+                    <% } %>
+                    <tr><pre>ID:   <%= produse[i].id %>   </pre> </tr>
+                    <tr><pre>NUME:    <%= produse[i].nume %>    </pre> </tr> 
+                    <tr><pre>PRET:    <%= produse[i].pret %>    </pre></tr>
+                    <% if(utilizator){ %>
+                        <form action="/adaugare-cos" method="POST">
+                            <tr><br/><pre id="adauga"><button class="buton" type = "submit" name="id" value="<%=produse[i].id%>">Adaugă în coș</button><br/><br/></pre></tr>   
+                        </form>
+                    <%} else {%>
+                        <tr><br/><button disabled>Adaugă în coș</button></tr>
+                <%} %>
+            <% } %>
+            </table>
+            <br/><br/><button class="buton" onclick="window.location.href='http://localhost:6777/admin'">Adaugă alte produse</button>
+        <% } %>
+    </div>
+
+<br/>
+
+</div>
+<br/><br/><br/><br/><br/><br/><br/>

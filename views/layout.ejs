@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flower Shop</title>
+        <link rel="stylesheet" type="text/css" href="stil.css">
+        <meta charset="utf-8"/>
+    </head>
+
+    <header>
+        <h1 id="titlu">🌼 🌷 🌹 &nbsp; <span style="font-size: 50px;">Secret Garden</span> &nbsp; 🌹 🌷 🌼</h1>
+    </header>
+        
+    <body>
+        <nav class = "topnav">
+            <a onclick="window.location.href='http://localhost:6777/'">Acasă</a>
+            <a onclick="window.location.href='http://localhost:6777/chestionar'">Chestionar</a>
+            <a onclick="window.location.href='http://localhost:6777/vizualizare-cos'">Vizualizare cos</a>
+            <div class="topnav-right">
+                <a onclick="window.location.href='http://localhost:6777/autentificare'">Login</a>
+                <a onclick="window.location.href='http://localhost:6777/logout'">Logout</a>
+            </div>
+            
+        </nav>
+                <main>
+            <%- body %>
+        </main>
+
+        <br/><br/><br/>
+        <footer>
+            Copyright &copy; 2023 Arădoaei Elena
+            <br/>
+            Contact: <a href="mailto:elena.aradoaei@gmail.com">elena.aradoaei@gmail.com</a>
+        </footer>
+
+    </body>
+</html>

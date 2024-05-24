@@ -1,0 +1,95 @@
+[
+	{
+		"intrebare": "1. Câte petale are o lalea?",
+		"variante": [
+            "a. 3 petale și 3 sepale",
+            "b. 4 petale și 2 sepale",
+            "c. 6 petale și 2 sepale"
+        ],
+		"corect": 0
+	},
+    {
+		"intrebare": "2. Cum se aleg butașii de trandafir?",
+		"variante": [
+            "a. pe cei mai ofiliți", 
+            "b. pe cei care au culoare verde intens, iar la nivelul ramurilor nu există vătămări", 
+            "c. nu știu, îi alege mama"
+        ],
+		"corect": 1
+	},
+    {
+		"intrebare": "3. Ce simbolizează un trandafir roșu?",
+		"variante": [
+            "a. fericire, grație și dulce bucurie, fiind floarea emoțiilor blânde", 
+            "b. puritate, inocență, virtute și sinceritate", 
+            "c. iubire, frumusețe, viață și moarte"
+        ],
+		"corect": 2
+	},
+    {
+		"intrebare": "4. Care dintre următoarele flori este cunoscută pentru proprietățile sale de calmare și relaxare?",
+		"variante": [
+            "a. lavandă", 
+            "b. orhidee", 
+            "c. crizantemă"
+        ],
+		"corect": 0
+	},
+    {
+		"intrebare": "5. Ce floare este cunoscută pentru proprietățile sale medicinale și este adesea folosită în ceaiuri și tincturi?",
+		"variante": [
+            "a. mușețel", 
+            "b. hibiscus", 
+            "c. margaretă"
+        ],
+		"corect": 0
+	},
+    {
+		"intrebare": "6. Care este floarea națională a Japoniei?",
+		"variante": [
+            "a. lalea", 
+            "b. cireș", 
+            "c. trandafir"
+        ],
+		"corect": 1
+	},
+    {
+		"intrebare": "7. Când trebuie sa oferi flori unei fete?",
+		"variante": [
+            "a. când e supărată", 
+            "b. de ziua ei", 
+            "c. oricând"
+        ],
+		"corect": 2
+	},
+    {
+		"intrebare": "8. Când trebuie udată o ohidee?",
+		"variante": [
+            "a. o dată la două săptămâni", 
+            "b. când îmi amintesc", 
+            "c. nu trebuie udată"
+        ],
+		"corect": 0
+	},
+    {
+		"intrebare": "9. Ce ajută cel mai mult florile să crească mari si frumoase?",
+		"variante": [
+            "a. apă", 
+            "b. dragoste", 
+            "c. lumină",
+            "d. toate răspunsurile sunt corecte"
+        ],
+		"corect": 3
+	},
+    {
+		"intrebare": "10. Care sunt florile cel mai des folosite pentru buchetele de mirese?",
+		"variante": [
+            "a. lalele", 
+            "b. crizanteme", 
+            "c. trandafiri",
+            "d. orhidee", 
+            "e. frezii"
+        ],
+		"corect": 2
+	}
+]
